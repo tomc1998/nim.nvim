@@ -15,4 +15,4 @@ CompilerSet errorformat=
       \%I%f(%l\\,\ %c)\ %m,
       \%-IHint:\ %m,
       \%-ICC:\ %m
-CompilerSet makeprg=nim\ c\ --listFullPaths:on\ $*\ %
+CompilerSet makeprg=nim\ r\ --listFullPaths:on\ $* "
