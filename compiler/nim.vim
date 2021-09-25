@@ -8,11 +8,5 @@ endif
 
 let current_compiler = "nim"
 
-CompilerSet errorformat=
-      \%f(%l\\,\ %c)\ %trror:\ %m,
-      \%f(%l\\,\ %c)\ %tarning:\ %m,
-      \%A%f(%l\\,\ %c)\ Hint:\ %m,
-      \%I%f(%l\\,\ %c)\ %m,
-      \%-IHint:\ %m,
-      \%-ICC:\ %m
+CompilerSet errorformat=%f(%l\\,\ %c)\ Error:\ %m
 CompilerSet makeprg=nim\ r\ --listFullPaths:on\ $* "
